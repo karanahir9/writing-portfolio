@@ -1,0 +1,19 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.8); 
+    position: static;
+    z-index: 1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    padding-top: 0;
+}
+
+.header a {
+    text-decoration: none;
+    color:  rgb(250, 171, 44);
+    font-size: 25px;
+    padding: 3%;
+}

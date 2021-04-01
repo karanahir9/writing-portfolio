@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Dosis:wght@500&display=swap');
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Della Respira', serif;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding-left:1em;
+    padding-top: 2em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-icons  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}

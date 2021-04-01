@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Dosis:wght@500&display=swap');
+
+.home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 700px;
+}
+
+.home h1 {
+    font-size: 55px;
+    margin-bottom: 0%;
+    font-family: 'Della Respira', serif;
+    color: black;
+    text-transform: none;
+    margin: 0 20px;
+    animation: fadeIn ease 1.75s;
+    -webkit-animation: fadeIn ease 1.75s;
+    }
+    
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+.home h3{
+    margin-top: 0 ;
+    padding-left: 50px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-size: 30px;
+    color: rgb(250, 171, 44);
+    font-family: 'Della Respira', serif;
+}
+  /* Animation */
+  h3 {
+    animation: animated-text 3s steps(30,end) 1s 1 normal both;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 250px;}
+  }
+
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me p{
+    /* font-size: 25px; */
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    font-size: 150%;
+    text-transform: none;
+    margin: 0 20px;
+    animation: zoomIn normal 15s;
+    -webkit-animation: zoomIn normal 15s;
+    }
+    
+    @keyframes zoomIn {
+    0% {
+        opacity:0;
+        font-size: 0%;
+    }
+    100% {
+        opacity:1;
+        font-size: 150%;
+    }
+}
+    
+    @-moz-keyframes zoomIn {
+    0% {opacity:0;
+        font-size: 0%;}
+    100% {opacity:1;
+        font-size: 150%;}
+    }
+    
+    @-webkit-keyframes zoomIn {
+    0% {opacity:0;
+        font-size: 0%;}
+    100% {opacity:1;
+        font-size: 150%;}
+    }
+    
+    @-o-keyframes zoomIn {
+    0% {opacity:0;
+        font-size: 0%;}
+    100% {opacity:1;
+        font-size: 150%;}
+    }
+    
+    @-ms-keyframes zoomIn {
+    0% {opacity:0;
+        font-size: 0%;}
+    100% {opacity:1;
+        font-size: 150%;}
+    }
+
+
+.about-link {
+    padding: 10px;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px;
+}
