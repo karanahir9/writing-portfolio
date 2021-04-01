@@ -1,32 +1,25 @@
 import React from 'react';
 import ItemsCarousel from 'react-items-carousel';
-import range from "lodash/range";
-
+import {CATEGORIES_DATA} from "../../data/categories.data";
+import Categories from "../categories/categories.component";
 
 export default class Portfolio extends React.Component  {
 
-  createChildren = n => range(n).map(i => <div key={i} style={{ height: 200, background: '#333' }}>{i}</div>);
-
   componentWillMount() {
     this.setState({
-      children: [],
       activeItemIndex: 0,
     });
-
-    setTimeout(() => {
-      this.setState({
-        children: this.createChildren(20),
-      })
-    }, 100);
   }
 
   
   changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
 
   render() {
-    const { activeItemIndex, children } = this.state;
+    const childrenArray = CATEGORIES_DATA.map((element,i) => <Categories key={i}categoriesData={element}/>);
+
+    const { activeItemIndex } = this.state;
     return(
-        <ItemsCarousel
+        <ItemsCarousel className="items-carousel"
           //Placeholder config
           enablePlaceholder
           numberOfPlaceholderItems={5}
@@ -45,12 +38,12 @@ export default class Portfolio extends React.Component  {
           activeItemIndex={activeItemIndex}
           activePosition={'center'}
 
-          chevronWidth={24}
+          chevronWidth={50}
           rightChevron={'>'}
           leftChevron={'<'}
-          outsideChevron={false}
+          outsideChevron={true}
         >
-          {children}
+          {childrenArray}
         </ItemsCarousel>
     );
   }
