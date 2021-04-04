@@ -1,7 +1,9 @@
 import React from 'react';
+import "./portfolio.styles.css";
 import ItemsCarousel from 'react-items-carousel';
 import {CATEGORIES_DATA} from "../../data/categories.data";
 import Categories from "../categories/categories.component";
+import CategoryDetails  from "../categoryDetails/categoryDetails.component";
 
 export default class Portfolio extends React.Component  {
 
@@ -12,14 +14,17 @@ export default class Portfolio extends React.Component  {
   }
 
   
-  changeActiveItem = (activeItemIndex) => this.setState({ activeItemIndex });
+  changeActiveItem = (activeItemIndex) => {
+      this.setState({ activeItemIndex })
+    };
 
   render() {
     const childrenArray = CATEGORIES_DATA.map((element,i) => <Categories key={i}categoriesData={element}/>);
 
     const { activeItemIndex } = this.state;
     return(
-        <ItemsCarousel className="items-carousel"
+      <div className="carousel-container">
+        <ItemsCarousel
           //Placeholder config
           enablePlaceholder
           numberOfPlaceholderItems={5}
@@ -27,24 +32,27 @@ export default class Portfolio extends React.Component  {
           placeholderItem={<div style={{ height: 200, background: '#900' }}>Placeholder</div>}
 
           // Carousel configurations
-          numberOfCards={3}
+          numberOfCards={1}
           gutter={12}
           showSlither={true}
-          firstAndLastGutter={true}
-          freeScrolling={false}
+          firstAndLastGutter={false}
+          freeScrolling={true}
 
           //Active Item Configuration
           requestToChangeActive={this.changeActiveItem}
           activeItemIndex={activeItemIndex}
           activePosition={'center'}
 
-          chevronWidth={50}
-          rightChevron={'>'}
-          leftChevron={'<'}
+          chevronWidth={100}
+          rightChevron= {<div className="right-chevron"><i className="fa fa-chevron-right fa-3x" aria-hidden="true"></i></div>}
+          leftChevron={<div className="left-chevron"><i className="fa fa-chevron-left fa-3x" aria-hidden="true"></i></div>}
           outsideChevron={true}
         >
           {childrenArray}
         </ItemsCarousel>
+
+        <CategoryDetails activeIndex={this.state.activeItemIndex}/>
+      </div>
     );
   }
 }
