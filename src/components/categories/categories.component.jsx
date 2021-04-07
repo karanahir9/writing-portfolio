@@ -3,7 +3,7 @@ import "./categories.styles.css";
 
 const Categories = (props) => {
     
-    const { title, index} = props.categoriesData;
+    const { title} = props.categoriesData;
     return(
         <div className="categories">
             <h1>{title}</h1>
