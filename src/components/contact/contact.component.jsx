@@ -10,19 +10,19 @@ const Contact = () => {
         <div className="contact-body">
            <h1>I'd love to hear from you!</h1>
                 <img src={profileImg}
-                    alt="profile Picture"
+                    alt="profile"
                     style={{borderRadius:"50%"}}
                 />
             <div className= "contact-icons">
                 <div>
-                <a style={{color:"black"}} target="_blank" href="mailto:kumgauri15@gmail.com">
+                <a style={{color:"black"}} target="_blank" rel="noreferrer" href="mailto:kumgauri15@gmail.com">
                     <i className="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
                 </a>
                 <h3>Click to Email</h3>
                 </div>
                 <div>
                 <a href="https://www.linkedin.com/in/gauri-kumbhar-32205b17a" target="_blank" rel="noreferrer" >
-                    <img src={linkedIn} alt="linkedIn Image" height="50px" width="50px"/>
+                    <img src={linkedIn} alt="linkedIn" height="50px" width="50px"/>
                  </a>
                  <h3>LinkedIn</h3>
                 </div>

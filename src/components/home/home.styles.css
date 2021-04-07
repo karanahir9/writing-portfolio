@@ -80,48 +80,34 @@
     font-size: 150%;
     text-transform: none;
     margin: 0 20px;
-    animation: zoomIn normal 15s;
-    -webkit-animation: zoomIn normal 15s;
+    animation: fadeIn normal 3s;
+    -webkit-animation: fadeIn normal 3s;
     }
     
-    @keyframes zoomIn {
-    0% {
-        opacity:0;
-        font-size: 0%;
-    }
-    100% {
-        opacity:1;
-        font-size: 150%;
-    }
-}
-    
-    @-moz-keyframes zoomIn {
-    0% {opacity:0;
-        font-size: 0%;}
-    100% {opacity:1;
-        font-size: 150%;}
-    }
-    
-    @-webkit-keyframes zoomIn {
-    0% {opacity:0;
-        font-size: 0%;}
-    100% {opacity:1;
-        font-size: 150%;}
-    }
-    
-    @-o-keyframes zoomIn {
-    0% {opacity:0;
-        font-size: 0%;}
-    100% {opacity:1;
-        font-size: 150%;}
-    }
-    
-    @-ms-keyframes zoomIn {
-    0% {opacity:0;
-        font-size: 0%;}
-    100% {opacity:1;
-        font-size: 150%;}
-    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
 
 
 .about-link {

@@ -1,22 +1,118 @@
 export const CATEGORY_DETAILS = [
     {
         title: "Tech",
-        image: "logo192.png"
+        image: [
+            {imageUrl:"tech1.jpg", flipImageUrl:"If you have an idea, it deserves sharpened tools to make it shine. Your dream deserves seed funding, research capabilities and a guided incubation. What your dream deserves is IIML Business Incubator Program." },
+            {imageUrl:"tech2.jpg", flipImageUrl:"tech2flip.jpg" },
+            {imageUrl:"tech3.jpg", flipImageUrl:"Now, you can be the Python expert. We believe live mentor support helps students learn better & faster. At 10xAI, we offer agile learning features that make our academy a stand out from all the others in the learning field. Visit us or contact for course details" },
+            {imageUrl:"tech4.jpg", flipImageUrl:"Working for MNC's or just starting in the industry, your technical knowledge is what will help you succeed in your profession. Our technical courses are designed for industry professionals who want to \"know it all\" when it comes to AI, ML, and Programming. Contact us to know more about our course offerings." },
+            {imageUrl:"tech5.jpg", flipImageUrl:"tech5flip.jpg" },
+            {imageUrl:"tech6.jpg", flipImageUrl:"Learn the area of computer science that led humans to innovate machines & have a brain of their own. Programmers, coders, working professionals in the IT industry, or students who aim to become a full-fledged warehouse of knowledge, we have the right course for you. Contact us for more information." },
+            {imageUrl:"tech7.jpg", flipImageUrl:"Jaguar Software is transforming the lending process for businesses across India. Connect with us to build your Loan Management System." },
+            {imageUrl:"tech8.jpg", flipImageUrl:"tech8flip.jpg" }    ],    
+        showBlogs: true,
+        blogs: [
+            {blogLink:"http://writedesigndeliver.com/ai-challenges-for-digital-marketers/", blogTitle: "AI Challenges For Digital Marketers"},
+            {blogLink:"http://writedesigndeliver.com/branding-agency-in-pune/", blogTitle: "Branding"},
+            {blogLink:"http://writedesigndeliver.com/best-digital-marketing-agency-in-pune/", blogTitle: "Stay a step ahead of the curve with Digital Marketing"},
+            {blogLink:"http://writedesigndeliver.com/covid-19/", blogTitle: "Buying behavior after COVID-19"}
+        ],
+        showWebsite: true,
+        website: [{ websiteLink: "https://burhanicollege.edu.in/", websiteName: "Burhani College, Mumbai"}]           
     },
     {
         title: "Real Estate",
-        image: "profile.JPG"
+        image: [ {imageUrl:"re1.jpg", flipImageUrl:"The lands in your countryside which are right under your sight might be the next best investment you make. Nirvan Farms is a stretch of many such beautiful farmlands that bestow upon you- several possibilities like growing your farm produce, building your weekend home and leasing it when unused- together acts as your best investment for lifetime." },
+        {imageUrl:"re2.jpg", flipImageUrl:"re2flip.jpg" },
+        {imageUrl:"re3.jpg", flipImageUrl:"Remember when was the last time you had an out in the open picnic? Come visit Nirvan Farms. Here, as you complete your site visit, our local delicacies are ready for your taste buds! Or simply carry your potluck and have a good meal under the trees on our farmlands! Make it a day to remember with Nirvan Farms." },
+        {imageUrl:"re4.jpg", flipImageUrl:"Choose country-side living to fulfill your dream of a peaceful life. For a unique life connected to both nature & the world, choose Nirvan Farms." },
+        {imageUrl:"re5.jpg", flipImageUrl:"re5flip.jpg" },
+        {imageUrl:"re6.jpg", flipImageUrl:"Struck by all the modern-day amenities and spacious apartments, Akashparv embarks on the journey of your Big Blue Happy and Spiritual Living." },
+        {imageUrl:"re7.jpg", flipImageUrl:"One of the major benefits of living in apartments is developing proximity and connections that enhance our sense of community, thus fostering a better tomorrow for our society as a whole :)." },
+        {imageUrl:"re8.jpg", flipImageUrl:"re8flip.jpg" },
+        {imageUrl:"re9.jpg", flipImageUrl:"In sickness and in health, to love and to cherish forever. At Forest County, there is a strong connection between the quality of social infrastructure and the well being of all residents who envision building a life of their dreams.To know more about the property or book a site visit, contact us." },
+        {imageUrl:"re10.jpg", flipImageUrl:"Though located in the city's prime, a resident can experience the natural elements of air, water, and light in abundance in the form of 200 acres of lush greenery. Only at Verde Residence Collection." },
+        {imageUrl:"re11.jpg", flipImageUrl:"re11flip.jpg" },
+        {imageUrl:"re12.jpg", flipImageUrl:"Home decor is a passionate affair. Here's something to help you get started with your living room. Keep the coffee/center table as the focal point in the room and then adjust the other elements in accordance." }
+        ],
+        showBlogs: true,
+        blogs: [
+            {blogLink:"https://www.castelroyale.com/how-metro-impacts-on-punes-real-estate-industry/", blogTitle: "How Metro impacts on Pune’s Real Estate Industry"},
+            {blogLink:"https://www.verderesidences.com/tips-on-how-to-improve-the-look-of-your-home/", blogTitle: "Tips on How to Improve the Look of Your Home?"},
+            {blogLink:"https://www.castelroyale.com/buy-smartly-designed-spacious-homes-in-pune/", blogTitle: "Buy Smartly Designed Spacious Homes in Pune"},
+            {blogLink:"https://www.castelroyale.com/latest-summer-home-maintenance-checklist/", blogTitle: "Latest Summer Home Maintenance Checklist"},
+            {blogLink:"https://www.verderesidences.com/best-home-wall-color-combination-to-try-for-your-home/", blogTitle: "Best Home Wall Color Combination To Try For Your Home"},
+            {blogLink:"https://www.verderesidences.com/things-to-do-at-your-luxury-home-this-summer/", blogTitle: "Things to do at your luxury home this summer"},
+            {blogLink:"https://www.castelroyale.com/ideas-to-spruce-up-your-bathroom/", blogTitle: "Ideas to spruce up your bathroom"},
+            {blogLink:"https://www.verderesidences.com/impressive-benefits-of-living-in-a-luxury-apartment/", blogTitle: "Impressive Benefits Of Living in a Luxury Apartment"},
+            {blogLink:"https://www.avaantiresidences.com/simple-ideas-to-make-your-home-pet-friendly/", blogTitle: "How to make your home pet-friendly"},
+            {blogLink:"https://www.avaantiresidences.com/what-differentiates-luxury-flats-from-regular-flats/", blogTitle: "What differentiates luxury flats from regular flats"}
+        ],
+        showWebsite: false,
+        website: []
     },
     {
         title: "Hospitality",
-        image: "profile.JPG"
+        image: [{imageUrl:"hosp1.jpg", flipImageUrl:"As the seasons are changing, switch your wardrobe with an ultimate clothing collection. Celebrate February Fashion Fiesta. Explore exciting deals and offers on exclusive brands." },
+        {imageUrl:"hosp2.jpg", flipImageUrl:"hosp2flip.jpg" },
+        {imageUrl:"hosp3.jpg", flipImageUrl:"For the shopping aficionado in you, head out to the mall and discover a wide range of clothing brands that suit your taste and match your vibe!" },
+        {imageUrl:"hosp4.jpg", flipImageUrl:"It is always added to your cart kind of a day here! For you, it's always shop'o clock! Head out to the FOOD, FASHION, ENTERTAINMENT CAPITAL of the town." },
+        {imageUrl:"hosp5.jpg", flipImageUrl:"hosp5flip.jpg" },
+        {imageUrl:"hosp6.jpg", flipImageUrl:"With a wide range of popular cosmetic and beauty brands housing at the mall, join us and celebrate your inner beauty enthusiast." },
+        {imageUrl:"hosp7.jpg", flipImageUrl:"Goin up on a monday a post work shot never hurt anyone, right? 😉 or if you’re feeling more low key, come by and enjoy some vodka shots!" },
+        {imageUrl:"hosp8.jpg", flipImageUrl:"hosp8flip.jpg" },
+        {imageUrl:"hosp9.jpg", flipImageUrl:"We are finally uplifting the lockdown from your favorite meals starting today! Now relish the flavors of India with a range of hygienically prepared and safely delivered dishes from your very own Manali- Family Resto-Bar. Available for Pick-Up & Delivery." },
+        {imageUrl:"hosp10.jpg", flipImageUrl:"Explore an exquisite palate of food only at Barbeque Nation, Clover Hills Plaza, NIBM Road. Visit today!" },
+        {imageUrl:"hosp11.jpg", flipImageUrl:"hosp11flip.jpg" },
+        {imageUrl:"hosp12.jpg", flipImageUrl:"Wishing everyone a Happy Valentine's Day. Celebrate it by doing all the things you love with people you love at the mall." },
+        {imageUrl:"hosp13.jpg", flipImageUrl:"Taste the chaos of flavoring angels and fall in love with the devil, only at Lucifers Tavern." },
+        {imageUrl:"hosp14.jpg", flipImageUrl:"hosp14flip.jpg" },
+        {imageUrl:"hosp15.jpg", flipImageUrl:"At Lucifers Tavern- we serve appetizing & enticing distinctive food on a sinful platter. " },
+        {imageUrl:"hosp16.jpg", flipImageUrl:"Unlock your weekend blues with food and drinks seasoned to make your evenings more enthralling. Join us at Clover Hills Plaza!" },
+        {imageUrl:"hosp17.jpg", flipImageUrl:"hosp17flip.jpg" }
+        ],
+        showBlogs: false,
+        blogs: [],
+        showWebsite: true,
+        website: [{ websiteLink: "http://mystyqspa.in/", websiteName: "Mystyq Spa"}]          
     },
     {
-        title: "Environment And Agri",
-        image: "profile.JPG"
+        title: "Environment And Agriculture",
+        image: [
+        {imageUrl:"env1.jpg", flipImageUrl:"Artis Agro is all about helping farmers grow. With deep-research, modern technology, & best solutions, we offer a variety of crop & soil solutions in form of fertilizers, nutrients, bio-solution that ensure the healthy growth of your farm produce." },
+        {imageUrl:"env2.jpg", flipImageUrl:"We hope the spirit of Onam finds you all in good health. And we wish your lives be filled with melody, prosperity, and well-being." },
+        {imageUrl:"env3.jpg", flipImageUrl:"Improve your farming with new crop solutions only from Artis Agro." },
+        {imageUrl:"env4.jpg", flipImageUrl:"What you consume and give your body should only be healthily grown and protected. Artis Agro is all about helping farmers with top quality crop nutrition solutions." },
+        {imageUrl:"env5.jpg", flipImageUrl:"Artis Agro optimizes agricultural growth and development with superior quality reliable products to ensure a safe, healthy, and profitable future." },
+        {imageUrl:"env6.jpg", flipImageUrl:"Artis Agro brings you safe, innovative & contemporary bio solutions to pasture towards a healthy and greener future. We specialize in maximizing crop nutrition with superior quality products." },
+        ],
+        showBlogs: false,
+        blogs: [],
+        showWebsite: false,
+        website: []
     },
     {
         title: "Fitness and Health Care",
-        image: "profile.JPG"
+        image: [
+        {imageUrl:"fit1.jpg", flipImageUrl:"Love isn't only a celebration with others, it begins with yourself. Join THE FITNESSSPACE to show you care." },
+        {imageUrl:"fit2.jpg", flipImageUrl:"fit2flip.jpg" },
+        {imageUrl:"fit3.jpg", flipImageUrl:"Excited to jump back to your fitness routine? THE FITNESSSPACE - NOW OPEN!" },
+        {imageUrl:"fit4.jpg", flipImageUrl:"That's right! Healthy always wins the war! Make the right choices when it comes to what you consume and remember how it affects your body's health in the long-term." },
+        {imageUrl:"fit5.jpg", flipImageUrl:"fit5flip.jpg" },
+        {imageUrl:"fit6.jpg", flipImageUrl:"Control over a diet is tough, we agree! But only the ones sorted to nourish their health will certainly find the will to do it! Happy National Nutrition Week!" },
+        {imageUrl:"fit7.jpg", flipImageUrl:"Take the plunge and move forward into a fitter tomorrow, only with THE FITNESSSPACE." },
+        {imageUrl:"fit8.jpg", flipImageUrl:"fit8flip.jpg" },
+        {imageUrl:"fit9.jpg", flipImageUrl:"Happy World Emoji Day! Stay Safe." },
+        {imageUrl:"fit10.jpg", flipImageUrl:"You know what they say, a bad workout is the one that's not done! DON'T SKIP WORKOUT!" },
+        {imageUrl:"fit11.jpg", flipImageUrl:"fit11flip.jpg" },
+        {imageUrl:"fit12.jpg", flipImageUrl:"The Fitness Temple is that partner who will not let you break any fitness resolutions this year. To know more about our membership plans, connect with us." },
+        {imageUrl:"fit13.jpg", flipImageUrl:"Words a true fitness enthusiast should live by!" },
+        {imageUrl:"fit14.jpg", flipImageUrl:"fit14flip.jpg" },
+        {imageUrl:"fit15.jpg", flipImageUrl:"No reason is a good enough reason to hinder a true fitness enthusiast's fitness journey. Workout at home." }
+        ],
+        showBlogs: false,
+        blogs: [],
+        showWebsite: false,
+        website: []
     },
 ];
