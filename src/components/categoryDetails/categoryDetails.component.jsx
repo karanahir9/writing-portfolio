@@ -59,7 +59,7 @@ class CategoryDetails extends React.Component  {
         return(
             <div className="portfolio-page">
                 {this.renderWebsite(this.state.showWebsite)}
-            <div classname="website-grid">
+            <div className="website-grid">
                 {this.state.website.map(website => this.renderWebsiteLinks(website))}
             </div>
                 {this.renderBlogs(this.state.showBlogs)}

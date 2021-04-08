@@ -1,5 +1,5 @@
 .portfolio-page {
-
+    box-sizing: border-box;
 }
 
 .portfolio-page h2 {
@@ -26,7 +26,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
-    grid-gap: 15px;
+    grid-gap: 1rem;
+    box-sizing: border-box;
 }
 
 /* .image-grid img {
