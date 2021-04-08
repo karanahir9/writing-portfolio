@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImg from '../../assets/profile.JPG';
+import profileImg from '../../assets/profile.jpeg';
 import "./contact.styles.css";
 import Resume from '../../assets/Resume.pdf';
 import download from "../../assets/download-solid.svg";
@@ -11,7 +11,8 @@ const Contact = () => {
            <h1>I'd love to hear from you!</h1>
                 <img src={profileImg}
                     alt="profile"
-                    style={{borderRadius:"50%"}}
+                    height = "300" 
+                    style={{borderRadius:"40%"}}
                 />
             <div className= "contact-icons">
                 <div>
