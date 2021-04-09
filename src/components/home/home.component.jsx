@@ -10,7 +10,7 @@ const Home = () => {
               <h3>Content Creator</h3>
           </div>
           <div className="about-me">
-           <p>An engineer with a pen who loves writing, creating, visualizing. Hit the button and checkout my work.</p>
+           <p>A draft makes its way to minimalism through infinite words. <br/> I am an engineer with a pen and the ability to conceptualize, strategize, write, and collaborate.</p>
           </div>
           <div className="about-link">
           <Link style={{textDecoration:"none",fontSize:"20px" , color:"rgb(250, 171, 44)"}} to="/portfolio">View My Work</Link>

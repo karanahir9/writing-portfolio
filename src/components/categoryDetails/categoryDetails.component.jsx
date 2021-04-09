@@ -17,12 +17,12 @@ class CategoryDetails extends React.Component  {
           <div className="flip-card-inner">
             <div className="flip-card-back">
                 { imageUrls.flipImageUrl.includes(".jpg") ?
-            <img alt="flipped" src={imageUrls.flipImageUrl} height= "350px" width="350px"/> : 
+            <img alt="flipped" src={imageUrls.flipImageUrl} className="image"/> : 
             <p>{imageUrls.flipImageUrl}</p>
                 }
             </div>
              <div className="flip-card-front">
-                <img alt="front" src={imageUrls.imageUrl} height= "350px" width="350px"/>
+                <img alt="front" src={imageUrls.imageUrl} className="image" />
             </div>
           </div> 
         </div>
@@ -31,12 +31,12 @@ class CategoryDetails extends React.Component  {
 
     renderBlogs(showBlogs) {
          return (showBlogs ?
-                <h2>Blogs</h2> : <br/>);
+                <h2>Blogs & Brochures</h2> : <br/>);
     }
 
     renderBlogLinks(blog) {
         return(
-            <a href={blog.blogLink} target="_blank" rel="noreferrer">{blog.blogTitle}</a>
+            <a href={blog.blogLink} target="_blank" rel="noreferrer">{blog.blogTitle}</a> 
         );
     }
 
