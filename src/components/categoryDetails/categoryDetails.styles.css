@@ -96,7 +96,7 @@
     grid-template-columns: repeat(2, 1fr);
     }
     .flip-card {
-      justify-self: auto;
+      justify-self: center;
     }
 
 }
@@ -128,6 +128,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    object-fit: cover;
+
 }
 }
