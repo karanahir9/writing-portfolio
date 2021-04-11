@@ -28,7 +28,6 @@
     grid-template-columns: repeat(3, 1fr);
     
     grid-gap: 1rem;
-    object-fit: cover;
     /* box-sizing: border-box; */
 }
 
@@ -90,7 +89,19 @@
   }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1250px) {
+  .image-grid {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .flip-card {
+      justify-self: auto;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
   .image-grid {
   margin-top: 2em;
   display: grid;
@@ -110,6 +121,7 @@
     width: 250px;
     height: 250px;
     perspective: 1000px;/* Remove this if you don't want the 3D effect */
+    justify-self: center;
   }
 
   .blog-grid {

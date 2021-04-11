@@ -8,19 +8,32 @@
 }
 
 .contact-icons {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     width: 60%;
     padding-left:1em;
     padding-top: 2em;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.contact-icons  div {
+.contact-icons a{
+    align-self: center;
+    justify-self: center;
+}
+
+.contact-icons h3 {
+    text-align: center;
+}
+
+/* .contact-icons  div {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-}
+} */

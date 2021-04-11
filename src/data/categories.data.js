@@ -1,5 +1,5 @@
 export const CATEGORIES_DATA = [
-   { title: "Tech, Learning & Services",
+   { title: "Tech & Learning",
     index: 1},
     { title: "Real Estate",
     index: 2},

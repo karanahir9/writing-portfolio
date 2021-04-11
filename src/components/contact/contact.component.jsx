@@ -15,24 +15,24 @@ const Contact = () => {
                     style={{borderRadius:"40%"}}
                 />
             <div className= "contact-icons">
-                <div>
+                {/* <div> */}
                 <a style={{color:"black"}} target="_blank" rel="noreferrer" href="mailto:kumgauri15@gmail.com">
                     <i className="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
                 </a>
-                <h3>Click to Email</h3>
-                </div>
-                <div>
+                {/* </div> */}
+                {/* <div> */}
                 <a href="https://www.linkedin.com/in/gauri-kumbhar-32205b17a" target="_blank" rel="noreferrer" >
                     <img src={linkedIn} alt="linkedIn" height="50px" width="50px"/>
                  </a>
-                 <h3>LinkedIn</h3>
-                </div>
-                <div>
+                {/* </div> */}
+                {/* <div> */}
                 <a style={{ textDecoration:"none", fontSize: "40px"}} href= {Resume} download="GauriKumbharCV.pdf">        
                 <img src={download} height ="50px" widht="50px" alt="download svg"/>    
                 </a>
+                <h3>Click to Email</h3>
+                <h3>LinkedIn</h3>
                 <h3>Click to Download Resume</h3>
-                </div>
+                {/* </div> */}
                 
             </div>
         </div>
