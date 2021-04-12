@@ -21,7 +21,9 @@ export const CATEGORY_DETAILS = [
             
         ],
         showWebsite: true,
-        website: [{ websiteLink: "https://burhanicollege.edu.in/", websiteName: "Burhani College, Mumbai"}]           
+        website: [{ websiteLink: "https://burhanicollege.edu.in/", websiteName: "Burhani College, Mumbai"}],
+        showVideo: true,
+        video: [{videoLink: "https://drive.google.com/drive/folders/1GqPpGm8_Z2FkL8QG5psVt_Pud-XAeILx?usp=sharing", videoTitle: "Google Drive Link"}]       
     },
     {
         title: "Real Estate",
@@ -65,7 +67,9 @@ export const CATEGORY_DETAILS = [
             {blogLink:"https://drive.google.com/file/d/19nqiANwBr9D7sguuHv3x_sOnnDo9JYBK/view?usp=sharing", blogTitle: "Verde Residence Collection Newsletter"}
         ],
         showWebsite: false,
-        website: []
+        website: [],
+        showVideo: false,
+        video: []
     },
     {
         title: "Hospitality",
@@ -107,7 +111,9 @@ export const CATEGORY_DETAILS = [
         showBlogs: false,
         blogs: [],
         showWebsite: true,
-        website: [{ websiteLink: "http://mystyqspa.in/", websiteName: "Mystyq Spa"}]          
+        website: [{ websiteLink: "http://mystyqspa.in/", websiteName: "Mystyq Spa"}],
+        showVideo: false,
+        video: []          
     },
     {
         title: "Environment And Agriculture",
@@ -128,7 +134,9 @@ export const CATEGORY_DETAILS = [
         showBlogs: false,
         blogs: [],
         showWebsite: false,
-        website: []
+        website: [],
+        showVideo: false,
+        video: []
     },
     {
         title: "Fitness and Health Care",
@@ -167,6 +175,8 @@ export const CATEGORY_DETAILS = [
         showBlogs: false,
         blogs: [],
         showWebsite: false,
-        website: []
+        website: [],
+        showVideo: false,
+        video: []
     },
 ];

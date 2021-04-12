@@ -29,9 +29,20 @@ class CategoryDetails extends React.Component  {
         );        
     }
 
+    renderVideos(showVideos) {
+        return (showVideos ?
+            <h2>Videos</h2> : null);
+    }
+
+    renderVideoLinks(video) {
+        return(
+            <a href={video.videoLink} target="_blank" rel="noreferrer">{video.videoTitle}</a> 
+        );
+    }
+
     renderBlogs(showBlogs) {
          return (showBlogs ?
-                <h2>Blogs & Brochures</h2> : <br/>);
+                <h2>Blogs & Brochures</h2> : null);
     }
 
     renderBlogLinks(blog) {
@@ -42,7 +53,7 @@ class CategoryDetails extends React.Component  {
 
     renderWebsite(showWebsite) {
         return (showWebsite ?
-            <h2>Websites</h2> : <br/>);
+            <h2>Websites</h2> : null);
     }
 
     renderWebsiteLinks(website) {
@@ -52,12 +63,16 @@ class CategoryDetails extends React.Component  {
     }
 
     static getDerivedStateFromProps( props, state) {
-        const { title, image, showBlogs, blogs, showWebsite, website } = CATEGORY_DETAILS[props.activeIndex];    
-        return { title,  image, showBlogs, blogs, showWebsite, website}    
+        const { title, image, showBlogs, blogs, showWebsite, website, showVideo, video } = CATEGORY_DETAILS[props.activeIndex];    
+        return { title,  image, showBlogs, blogs, showWebsite, website, showVideo, video}    
     }
     render(){
         return(
             <div className="portfolio-page">
+                {this.renderVideos(this.state.showVideo)}
+            <div>
+                {this.state.video.map(video => this.renderVideoLinks(video))}
+            </div>
                 {this.renderWebsite(this.state.showWebsite)}
             <div className="website-grid">
                 {this.state.website.map(website => this.renderWebsiteLinks(website))}
