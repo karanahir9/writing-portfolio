@@ -29,16 +29,16 @@ class CategoryDetails extends React.Component  {
         );        
     }
 
-    renderVideos(showVideos) {
-        return (showVideos ?
-            <h2>Videos</h2> : null);
-    }
+    // renderVideos(showVideos) {
+    //     return (showVideos ?
+    //         <h2>Videos</h2> : null);
+    // }
 
-    renderVideoLinks(video) {
-        return(
-            <a href={video.videoLink} target="_blank" rel="noreferrer">{video.videoTitle}</a> 
-        );
-    }
+    // renderVideoLinks(video) {
+    //     return(
+    //         <a href={video.videoLink} target="_blank" rel="noreferrer">{video.videoTitle}</a> 
+    //     );
+    // }
 
     renderBlogs(showBlogs) {
          return (showBlogs ?
@@ -69,10 +69,10 @@ class CategoryDetails extends React.Component  {
     render(){
         return(
             <div className="portfolio-page">
-                {this.renderVideos(this.state.showVideo)}
+                {/* {this.renderVideos(this.state.showVideo)}
             <div>
                 {this.state.video.map(video => this.renderVideoLinks(video))}
-            </div>
+            </div> */}
                 {this.renderWebsite(this.state.showWebsite)}
             <div className="website-grid">
                 {this.state.website.map(website => this.renderWebsiteLinks(website))}

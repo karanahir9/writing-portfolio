@@ -30,6 +30,12 @@
     grid-gap: 1rem;
     /* box-sizing: border-box; */
 }
+.website-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
 
 
 
@@ -130,4 +136,7 @@
     flex-wrap: wrap;
 
 }
+
+
+
 }
