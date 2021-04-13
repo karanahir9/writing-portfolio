@@ -68,7 +68,7 @@ class CategoryDetails extends React.Component  {
     }
     render(){
         return(
-            <div className="portfolio-page">
+        <div className="portfolio-page">
                 {/* {this.renderVideos(this.state.showVideo)}
             <div>
                 {this.state.video.map(video => this.renderVideoLinks(video))}
@@ -86,10 +86,7 @@ class CategoryDetails extends React.Component  {
             <div className="image-grid">
                 {this.state.image.map(imageUrls => this.renderImage(imageUrls))}
             </div>
-            
-                
-                
-            </div>
+        </div>
         );
 
     }

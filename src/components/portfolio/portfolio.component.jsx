@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import "./portfolio.styles.css";
 import ItemsCarousel from 'react-items-carousel';
 import {CATEGORIES_DATA} from "../../data/categories.data";
@@ -23,6 +23,7 @@ export default class Portfolio extends React.Component  {
 
     const { activeItemIndex } = this.state;
     return(
+      <Fragment>
       <div className="carousel-container">
         <ItemsCarousel
           //Placeholder config
@@ -43,16 +44,16 @@ export default class Portfolio extends React.Component  {
           activeItemIndex={activeItemIndex}
           activePosition={'center'}
 
-          chevronWidth={100}
+          chevronWidth={50}
           rightChevron= {<div className="right-chevron"><i className="fa fa-chevron-right fa-3x" aria-hidden="true"></i></div>}
           leftChevron={<div className="left-chevron"><i className="fa fa-chevron-left fa-3x" aria-hidden="true"></i></div>}
           outsideChevron={true}
         >
           {childrenArray}
         </ItemsCarousel>
-
-        <CategoryDetails activeIndex={this.state.activeItemIndex}/>
       </div>
+      <CategoryDetails activeIndex={this.state.activeItemIndex}/>
+      </Fragment>
     );
   }
 }

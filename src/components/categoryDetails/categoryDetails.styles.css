@@ -1,6 +1,6 @@
-
 .portfolio-page {
-
+  margin-left: 2rem;
+  overflow: hidden;
 }
 
 .portfolio-page h2 {
@@ -99,11 +99,12 @@
   .image-grid {
     margin-top: 2em;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 45%);
+    overflow: hidden;
     }
-    .flip-card {
-      justify-self: center;
-    }
+    /* .flip-card {
+      /* justify-self: center; 
+    } */
 
 }
 
@@ -113,7 +114,7 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
- 
+  overflow: hidden;
   }
 
   .flip-card-inner {
